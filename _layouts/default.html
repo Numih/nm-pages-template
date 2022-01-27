@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset='utf-8'>
+        {% if page.title %}
+            <title>{{page.title}}</title>
+        {% endif %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+
+    <body>
+        
+        <div class='main-div'>
+            <div>
+                <img class='center-img' src="../assets/img/Logo_NUMIH_Oficial.png" alt="Numih Logo" height="140" width="auto">
+            </div>
+            <div class='main-content'>
+                {{ content }}
+            </div>
+        </div>
+    </body>
+</html>

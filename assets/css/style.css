@@ -1,0 +1,25 @@
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content {
+    height: 100vh;
+}
+
+.main-div {
+    margin: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-bottom: fill;
+    background-color: #FFFFFF;
+}
+
+body {
+    background-image: url('../img/Textura_FundoBranco_Numih.svg')
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
