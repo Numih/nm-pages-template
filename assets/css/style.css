@@ -16,8 +16,40 @@
     background-color: #FFFFFF;
 }
 
+.ul-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dbd9d9
+}
+
+.li-navbar-item {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li-navbar-item:hover {
+    background-color: #979191;
+  }
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+}
+
 body {
     background-image: url('../img/Textura_FundoBranco_Numih.svg')
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 3px;
+    background-color: #dbd9d9;
 }
 
 * {

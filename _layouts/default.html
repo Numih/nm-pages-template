@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    {% seo %}
     <head>
         <meta charset='utf-8'>
         {% if page.title %}
@@ -17,9 +18,11 @@
             <div>
                 <img class='center-img' src="../assets/img/Logo_NUMIH_Oficial.png" alt="Numih Logo" height="140" width="auto">
             </div>
+            {% include header.html %}
             <div class='main-content'>
                 {{ content }}
             </div>
+            {% include footer.html %}
         </div>
     </body>
 </html>
