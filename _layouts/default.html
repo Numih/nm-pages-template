@@ -13,15 +13,15 @@
     </head>
 
     <body>
-        
-        <div class='main-div'>
-            <div>
-                <img class='center-img' src="../assets/img/Logo_NUMIH_Oficial.png" alt="Numih Logo" height="140" width="auto">
+        <div id="bg-container">
+            <div id="bg-gradient"></div>
+            <div id="bg">
+                <div id="bg-shadow"></div>
             </div>
+        </div>
+        <div id="main">
             {% include header.html %}
-            <div class='main-content'>
-                {{ content }}
-            </div>
+            {% include body.html %}
             {% include footer.html %}
         </div>
     </body>
