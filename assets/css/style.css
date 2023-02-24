@@ -36,7 +36,12 @@ code {
     background-color: #0000001c;
     border: 1px solid #ffffff18;
     padding: 8px 16px;
+    display: inline-block;
+}
+
+.highlight > code {
     display: block;
+}
 }
 
 h1 {
