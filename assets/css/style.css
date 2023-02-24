@@ -33,13 +33,15 @@ a {
 }
 
 code {
-    background-color: #0000001c;
-    border: 1px solid #ffffff18;
-    padding: 8px 16px;
+    background-color: #ffffff1c;
+    padding: 0.2em;
+    border-radius: 4px;
     display: inline-block;
 }
 
 .highlight > code {
+    background-color: #0000001c;
+    padding: 2em;
     display: block;
 }
 }
