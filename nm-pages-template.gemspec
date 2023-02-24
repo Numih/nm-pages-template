@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "nm-pages-template"
   spec.version       = "0.1.0"
-  spec.authors       = ["numih-arthur-teixeira"]
+  spec.authors       = ["numih-arthur-teixeira", "numih-g"]
   spec.email         = ["81268105+numih-arthur-teixeira@users.noreply.github.com"]
 
   spec.summary       = "Template for Numih github pages"

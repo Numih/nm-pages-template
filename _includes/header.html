@@ -1,14 +1,16 @@
 
 <div id="header">
-    <img id="logo" src="../assets/img/Logo_Negativo_AzulEscuro_NUMIH_Oficial_Transparente.png" alt="Numih Logo">
-    <ul class="ul-navbar" role="navigation">
-        {% for path in site.nav_pages %}
-            {% assign nav_page=site.pages | where:"path",path | first %}
-            <a class="a-navbar" href="{{ nav_page.url | relative_url }}">
-                <li class="li-navbar-item li-navbar-item:hover">
-                    {{ nav_page.title | default: "Page" }}
-                </li>
-            </a>
-        {% endfor %}
-    </ul>
+    <div>
+        <img id="logo" src="../assets/img/Logo_NUMIH_Oficial.png" alt="Numih Logo">
+        <ul class="ul-navbar" role="navigation">
+            {% for path in site.nav_pages %}
+                {% assign nav_page=site.pages | where:"path",path | first %}
+                <a class="a-navbar" href="{{ nav_page.url | relative_url }}">
+                    <li class="li-navbar-item li-navbar-item:hover">
+                        {{ nav_page.title | default: "Page" }}
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

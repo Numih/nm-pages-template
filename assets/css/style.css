@@ -1,7 +1,10 @@
 :root {
     --dark-blue: #052554;
     --darker-blue: #051e44;
+    --black: #030322;
+    --dark-grey: #484852;
     --orange: #ff9170;
+    --content-width: 1200px;
 }
 
 * {
@@ -13,12 +16,14 @@ body {
     padding: 0;
     position: relative;
     min-height: 100vh;
-    background: var(--dark-blue);
-    font-size: 130%;
-    color: #EEE;
+    color: var(--dark-grey);
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(45deg, #041835 0%, var(--dark-blue) 30%);
-    padding-bottom: 120px;
+    background: linear-gradient(210deg, #EEE 0%, #FFF 30%);
+}
+
+#main {
+    max-width: var(--content-width);
+    margin: 0 auto;
 }
 
 a {
@@ -32,27 +37,34 @@ code {
     display: block;
 }
 
+h1 {
+    border-bottom: 2px solid #CCC;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    color: #EEE;
-    text-decoration: underline var(--orange) 4px;
-    background-color: #051e44d2;
-    padding: 8px 24px;
-    display: inline-block;
+    color: var(--orange);
+    text-decoration: none;
+    display: block;
     margin-left: -24px;
+    padding: 0.5em 0;
 }
 
 #content {
-    max-width: 1000px;
-    padding: 0 2em;
+    padding: 0 6em;
     margin: 0 auto;
 }
 
 #header {
+    background-color: #FFF;
+}
+
+#header > div {
+    max-width: var(--content-width);
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 200px;
 }
 
 .ul-navbar {
@@ -67,8 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #logo {
-    width: 400px;
-    margin: 80px;
+    width: 300px;
 }
 
 .li-navbar-item {
@@ -77,10 +88,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
-    color: #FFF;
-    border-radius: 30px;
+    color: var(--black);
     transition: all 0.2s;
-    background-color: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.li-navbar-item:hover {
+    border-bottom: 2px solid #CCC;
 }
 
 .a-navbar {
@@ -88,66 +102,9 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.li-navbar-item:hover {
-    background-color: var(--darker-blue);
-}
-
 .a-navbar {
     color: black;
     text-decoration: none;
-}
-
-#bg-gradient {
-    background: linear-gradient(195deg, rgba(255,145,112,1) 10%, rgba(255,145,112,0) 40%);
-    position: absolute;
-    background-size: 200% 200%;
-    background-position: 100% 50%;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    animation: bg-gradient 20s ease;
-}
-
-@keyframes bg-gradient {
-    0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 100% 50%;
-	}
-}
-
-#bg-container {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-    overflow: hidden;
-}
-
-#bg {
-    height: 500px;
-    width: 500px;
-    background-image: url("../img/Textura_FundoAzul_Numih.svg");
-    background-attachment: fixed;
-    background-size: contain;
-    border-radius: 100%;
-    position: absolute;
-    top: -500px;
-    left: -500px;
-    animation: bg 50s infinite;
-    animation-delay: 3s;
-    z-index: -2;
-}
-
-#bg-shadow {
-    position: absolute;
-    height: calc(100% + 20px);
-    width: calc(100% + 20px);
-    top: -10px;
-    left: -10px;
-    box-shadow: 0 0 50px 70px var(--dark-blue) inset;
-    border-radius: 100%;
 }
 
 @keyframes bg {
@@ -169,8 +126,8 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
     display: block;
-    position: fixed;
-    padding: 20px 60px;
-    bottom: 0;
-    width: 100%;
+    padding: 6em 2em;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
 }
